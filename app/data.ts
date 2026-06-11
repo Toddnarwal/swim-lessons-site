@@ -53,3 +53,24 @@ export const certifications = [
   "Youth swim instruction experience",
   "Background checked instructor",
 ];
+
+export const serviceAreas = {
+  standard: [
+    "Los Gatos",
+    "Monte Sereno",
+    "Saratoga",
+    "Campbell",
+    "Cupertino",
+    "Almaden Valley",
+    "Cambrian Park",
+    "Willow Glen",
+  ],
+  extended: [
+    "Sunnyvale",
+    "Santa Clara",
+    "Mountain View",
+    "Los Altos",
+    "Los Altos Hills",
+    "Milpitas",
+  ],
+};

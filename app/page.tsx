@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ButtonLink, Section } from "./components";
-import { lessonOptions } from "./data";
+import { lessonOptions, serviceAreas } from "./data";
 
 export default function Home() {
   return (
@@ -52,6 +52,65 @@ export default function Home() {
               <p className="mt-3 leading-7 text-slate-600">{text}</p>
             </div>
           ))}
+        </div>
+      </Section>
+
+      <Section className="bg-white">
+        <div className="grid gap-8 lg:grid-cols-[0.78fr_1fr] lg:items-start">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-700">
+              Service area
+            </p>
+            <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+              Mobile swim lessons across the South Bay.
+            </h2>
+            <p className="mt-5 leading-8 text-slate-600">
+              Little Swimmers Academy travels to your family pool. Standard
+              service areas have no travel fee, while extended areas may include
+              a travel fee confirmed before booking.
+            </p>
+            <div className="mt-7">
+              <ButtonLink href="/book">Check Availability</ButtonLink>
+            </div>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="rounded-lg border border-cyan-100 bg-sky-50 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan-700">
+                No travel fee
+              </p>
+              <h3 className="mt-3 text-2xl font-bold">
+                Standard Service Area
+              </h3>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {serviceAreas.standard.map((area) => (
+                  <span
+                    key={area}
+                    className="rounded-full bg-white px-3 py-2 text-sm font-medium text-slate-800 ring-1 ring-cyan-100"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+                Travel fee applies
+              </p>
+              <h3 className="mt-3 text-2xl font-bold">
+                Extended Service Area
+              </h3>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {serviceAreas.extended.map((area) => (
+                  <span
+                    key={area}
+                    className="rounded-full bg-slate-50 px-3 py-2 text-sm font-medium text-slate-800 ring-1 ring-slate-200"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </Section>
 
