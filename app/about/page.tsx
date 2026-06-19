@@ -7,22 +7,23 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About"
         title="Personal instruction with a safety-first approach."
-        description="Little Swimmers Academy is built around trust, patience, and practical water confidence for children ages 3-13."
+        description="Little Swimmers Academy is built around trust, patience, and practical water confidence for children ages 3-16."
       />
       <Section className="bg-sky-50">
         <div className="grid gap-8 lg:grid-cols-3">
           <div className="rounded-lg bg-white p-7 shadow-sm ring-1 ring-sky-100 lg:col-span-2">
             <h2 className="text-2xl font-bold">Instructor Biography</h2>
             <p className="mt-4 leading-8 text-slate-600">
-              Your instructor brings years of youth swim instruction experience
-              to every backyard pool visit. Lessons are calm, structured, and
-              encouraging, helping children build comfort in the water while
-              learning practical skills they can use right away.
+              Hello! I was a competitive swimmer for nine years and have been
+              teaching private and group swim lessons since October 2019. As a
+              former high school All-American swimmer, I bring strong technical
+              knowledge and an adaptive coaching style to every lesson.
             </p>
             <p className="mt-4 leading-8 text-slate-600">
-              Families choose Little Swimmers Academy because the setting is
-              familiar, the instruction is private, and each child receives a
-              plan that reflects their confidence, attention span, and goals.
+              I enjoy working with beginners and experienced swimmers alike,
+              helping each student feel safe, comfortable, and confident in the
+              water while having fun along the way. I look forward to working
+              with you.
             </p>
           </div>
           <div className="rounded-lg bg-cyan-700 p-7 text-white">
@@ -30,7 +31,7 @@ export default function AboutPage() {
             <ul className="mt-5 space-y-3">
               {certifications.map((certification) => (
                 <li key={certification} className="flex gap-3">
-                  <span aria-hidden="true">✓</span>
+                  <span aria-hidden="true">{"\u2713"}</span>
                   <span>{certification}</span>
                 </li>
               ))}

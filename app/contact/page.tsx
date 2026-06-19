@@ -13,8 +13,8 @@ export default function ContactPage() {
           <div className="rounded-lg bg-cyan-700 p-7 text-white">
             <h2 className="text-2xl font-bold">Contact Information</h2>
             <div className="mt-5 space-y-3 text-cyan-50">
-              <p>hello@littleswimmersacademy.com</p>
-              <p>(555) 123-4567</p>
+              <p>mail2sierra@gmail.com</p>
+              <p>(408) 438-6870</p>
               <p>Serving local backyard pools</p>
             </div>
           </div>

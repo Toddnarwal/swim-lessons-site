@@ -1,21 +1,25 @@
 export const lessonOptions = [
   {
     title: "30 Minute Lesson",
-    price: "$45",
+    price: "$55",
     duration: "Best for new swimmers and focused skill tune-ups.",
-    features: ["Ages 3-13", "One-on-one attention", "Water comfort and safety"],
+    features: ["Ages 3-16", "One-on-one attention", "Water comfort and safety"],
   },
   {
     title: "45 Minute Lesson",
-    price: "$60",
+    price: "$65",
     duration: "A balanced session for confidence, drills, and practice.",
-    features: ["Most popular", "Technique development", "Personalized pacing"],
+    features: ["Ages 6-16", "Technique development", "Personalized pacing"],
   },
   {
     title: "60 Minute Lesson",
     price: "$75",
     duration: "Ideal for siblings, stronger swimmers, or deeper progression.",
-    features: ["Extended practice", "Endurance and stroke work", "Parent recap"],
+    features: [
+      "Most popular",
+      "Endurance and stroke work",
+      "Can be split between siblings",
+    ],
   },
 ];
 
@@ -23,7 +27,7 @@ export const faqs = [
   {
     question: "What ages do you teach?",
     answer:
-      "Little Swimmers Academy offers private instruction for children ages 3-13, with each lesson adapted to the child's comfort level and goals.",
+      "Little Swimmers Academy offers private instruction for children ages 3-16, with each lesson adapted to the child's comfort level and goals.",
   },
   {
     question: "Do you travel to my pool?",
@@ -61,16 +65,13 @@ export const serviceAreas = {
     "Saratoga",
     "Campbell",
     "Cupertino",
+  ],
+  extended: [
     "Almaden Valley",
     "Cambrian Park",
     "Willow Glen",
-  ],
-  extended: [
     "Sunnyvale",
     "Santa Clara",
     "Mountain View",
-    "Los Altos",
-    "Los Altos Hills",
-    "Milpitas",
   ],
 };

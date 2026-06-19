@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Little Swimmers Academy",
   description:
-    "Private mobile swim lessons for children ages 3-13 at your own pool.",
+    "Private mobile swim lessons for children ages 3-16 at your own pool.",
 };
 
 const navItems = [
@@ -61,30 +61,22 @@ export default function RootLayout({
         </header>
         <main className="flex-1">{children}</main>
         <footer className="bg-slate-950 text-white">
-          <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-3 lg:px-8">
+          <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:px-8">
             <div>
               <p className="text-lg font-semibold">
                 Little Swimmers Academy
               </p>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Private swim instruction for children ages 3-13 at your family
+                Private swim instruction for children ages 3-16 at your family
                 pool.
               </p>
             </div>
             <div>
               <p className="font-semibold">Contact</p>
               <div className="mt-3 space-y-2 text-sm text-slate-300">
-                <p>hello@littleswimmersacademy.com</p>
-                <p>(555) 123-4567</p>
+                <p>mail2sierra@gmail.com</p>
+                <p>(408) 438-6870</p>
                 <p>Serving local backyard pools</p>
-              </div>
-            </div>
-            <div>
-              <p className="font-semibold">Social</p>
-              <div className="mt-3 flex flex-wrap gap-3 text-sm text-slate-300">
-                <span>Instagram</span>
-                <span>Facebook</span>
-                <span>Yelp</span>
               </div>
             </div>
           </div>
