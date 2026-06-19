@@ -1,4 +1,5 @@
-import { PageHeader, Section, TextArea, TextInput } from "../components";
+import { PageHeader, Section } from "../components";
+import { ContactForm } from "./form";
 
 export default function ContactPage() {
   return (
@@ -18,22 +19,7 @@ export default function ContactPage() {
               <p>Serving local backyard pools</p>
             </div>
           </div>
-          <form className="rounded-lg bg-white p-6 shadow-sm ring-1 ring-sky-100">
-            <div className="grid gap-5 sm:grid-cols-2">
-              <TextInput label="Name" name="name" required />
-              <TextInput label="Email" name="email" type="email" required />
-              <TextInput label="Phone" name="phone" type="tel" />
-              <div className="sm:col-span-2">
-                <TextArea label="Message" name="message" required />
-              </div>
-            </div>
-            <button
-              type="button"
-              className="mt-6 min-h-12 rounded-full bg-cyan-600 px-6 font-semibold text-white transition hover:bg-cyan-700"
-            >
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </Section>
     </>

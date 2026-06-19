@@ -16,7 +16,7 @@ export const lessonOptions = [
     price: "$75",
     duration: "Ideal for siblings, stronger swimmers, or deeper progression.",
     features: [
-      "Most popular",
+      "Advanced swimmers",
       "Endurance and stroke work",
       "Can be split between siblings",
     ],
@@ -32,12 +32,12 @@ export const faqs = [
   {
     question: "Do you travel to my pool?",
     answer:
-      "Yes. The instructor travels to the customer's pool, making lessons convenient and familiar for your child.",
+      "Yes. The instructor travels to the client's pool, making lessons convenient and familiar for your child.",
   },
   {
     question: "What should my child bring?",
     answer:
-      "Please have your child ready with a swimsuit, towel, goggles if they use them, sunscreen, and water to drink.",
+      "Please have your child ready with a swimsuit, towel, goggles, and a kids kickboard.",
   },
   {
     question: "What happens if weather cancels a lesson?",

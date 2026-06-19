@@ -7,7 +7,7 @@ export default function PricingPage() {
       <PageHeader
         eyebrow="Pricing"
         title="Simple lesson options for busy families."
-        description="Choose the right session length for your child. Pricing uses mock data and can be updated before launch."
+        description="Choose the right session length for your child."
       />
       <Section className="bg-sky-50">
         <div className="grid gap-5 md:grid-cols-3">
