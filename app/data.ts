@@ -3,7 +3,7 @@ export const lessonOptions = [
     title: "30 Minute Lesson",
     price: "$55",
     duration: "Best for new swimmers and focused skill tune-ups.",
-    features: ["Ages 3-16", "One-on-one attention", "Water comfort and safety"],
+    features: ["Ages 2-16", "One-on-one attention", "Water comfort and safety"],
   },
   {
     title: "45 Minute Lesson",
@@ -27,7 +27,7 @@ export const faqs = [
   {
     question: "What ages do you teach?",
     answer:
-      "Little Swimmers Academy offers private instruction for children ages 3-16, with each lesson adapted to the child's comfort level and goals.",
+      "Little Swimmers Academy offers private instruction for children ages 2-16, with each lesson adapted to the child's comfort level and goals.",
   },
   {
     question: "Do you travel to my pool?",
@@ -52,7 +52,6 @@ export const faqs = [
 ];
 
 export const certifications = [
-  "Red Cross Water Safety Instructor",
   "CPR and First Aid Certified",
   "Youth swim instruction experience",
   "Background checked instructor",

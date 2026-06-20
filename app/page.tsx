@@ -16,7 +16,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
               Little Swimmers Academy provides private swim lessons for
-              children ages 3-16. Your instructor travels to the customer&apos;s
+              children ages 2-16. Your instructor travels to the customer&apos;s
               pool with a calm, skill-based plan built around your child&apos;s
               pace.
             </p>
@@ -43,7 +43,7 @@ export default function Home() {
       <Section className="bg-sky-50">
         <div className="grid gap-5 md:grid-cols-3">
           {[
-            ["Ages 3-16", "Lessons are tailored for early learners through confident young swimmers."],
+            ["Ages 2-16", "Lessons are tailored for early learners through confident young swimmers."],
             ["Your pool", "The instructor comes to your home pool for familiar, convenient practice."],
             ["Private coaching", "One-on-one attention keeps lessons focused, calm, and productive."],
           ].map(([title, text]) => (

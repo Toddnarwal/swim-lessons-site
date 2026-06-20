@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Little Swimmers Academy",
   description:
-    "Private mobile swim lessons for children ages 3-16 at your own pool.",
+    "Private mobile swim lessons for children ages 2-16 at your own pool.",
 };
 
 const navItems = [
@@ -67,7 +67,7 @@ export default function RootLayout({
                 Little Swimmers Academy
               </p>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Private swim instruction for children ages 3-16 at your family
+                Private swim instruction for children ages 2-16 at your family
                 pool.
               </p>
             </div>

@@ -7,7 +7,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About"
         title="Personal instruction with a safety-first approach."
-        description="Little Swimmers Academy is built around trust, patience, and practical water confidence for children ages 3-16."
+        description="Little Swimmers Academy is built around trust, patience, and practical water confidence for children ages 2-16."
       />
       <Section className="bg-sky-50">
         <div className="grid gap-8 lg:grid-cols-3">
@@ -23,7 +23,7 @@ export default function AboutPage() {
               I enjoy working with beginners and experienced swimmers alike,
               helping each student feel safe, comfortable, and confident in the
               water while having fun along the way. I look forward to working
-              with you.
+              with you!
             </p>
           </div>
           <div className="rounded-lg bg-cyan-700 p-7 text-white">
