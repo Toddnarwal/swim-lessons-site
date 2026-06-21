@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Little Swimmers Academy",
   description:
-    "Private mobile swim lessons for children ages 2-16 at your own pool.",
+    "Private mobile swim lessons for children ages 2‑16 at your own pool.",
 };
 
 const navItems = [
@@ -33,9 +34,14 @@ export default function RootLayout({
             aria-label="Main navigation"
           >
             <Link href="/" className="flex items-center gap-3">
-              <span className="flex h-10 w-12 items-center justify-center rounded-lg bg-cyan-600 text-sm font-bold text-white">
-                LSA
-              </span>
+              <Image
+                src="/little-swimmers-logo.png"
+                alt="Little Swimmers Academy logo"
+                width={44}
+                height={44}
+                className="h-11 w-11 rounded-lg object-contain"
+                priority
+              />
               <span className="text-lg font-semibold tracking-tight">
                 Little Swimmers Academy
               </span>
@@ -67,7 +73,7 @@ export default function RootLayout({
                 Little Swimmers Academy
               </p>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Private swim instruction for children ages 2-16 at your family
+                Private swim instruction for children ages 2‑16 at your family
                 pool.
               </p>
             </div>
