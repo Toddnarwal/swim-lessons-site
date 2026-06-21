@@ -1,12 +1,44 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { businessName, localBusinessJsonLd, siteUrl } from "./seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Little Swimmers Academy",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: businessName,
+    template: `%s | ${businessName}`,
+  },
   description:
-    "Private mobile swim lessons for children ages 2‑16 at your own pool.",
+    "Private mobile swim lessons for children ages 2-16 at family pools in Los Gatos, Saratoga, Campbell, Cupertino, Monte Sereno, and nearby South Bay communities.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: businessName,
+    description:
+      "Private mobile swim lessons for children ages 2-16 across Los Gatos, Saratoga, Campbell, Cupertino, Monte Sereno, and nearby South Bay communities.",
+    url: siteUrl,
+    siteName: businessName,
+    images: [
+      {
+        url: "/hero-preview-img-6934.png",
+        width: 1366,
+        height: 768,
+        alt: "Private swim instructor teaching a child in a residential pool",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: businessName,
+    description:
+      "Private mobile swim lessons for children ages 2-16 across the South Bay.",
+    images: ["/hero-preview-img-6934.png"],
+  },
 };
 
 const navItems = [
@@ -23,11 +55,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className="h-full antialiased"
-    >
+    <html lang="en" className="h-full antialiased">
       <body className="flex min-h-full flex-col bg-sky-50 text-slate-950">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessJsonLd),
+          }}
+        />
         <header className="sticky top-0 z-50 border-b border-sky-100 bg-white/92 backdrop-blur">
           <nav
             className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:px-6 lg:px-8 xl:flex-row xl:items-center xl:justify-between"
@@ -35,7 +70,7 @@ export default function RootLayout({
           >
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/little-swimmers-logo.png"
+                src="/little-swimmers-logo-v2.png"
                 alt="Little Swimmers Academy logo"
                 width={44}
                 height={44}
@@ -73,9 +108,15 @@ export default function RootLayout({
                 Little Swimmers Academy
               </p>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Private swim instruction for children ages 2‑16 at your family
-                pool.
+                Service-area-only private swim instruction for children ages
+                2-16 at your family pool.
               </p>
+              <Link
+                href="/service-areas"
+                className="mt-4 inline-flex text-sm font-semibold text-cyan-200 transition hover:text-white"
+              >
+                View service areas
+              </Link>
             </div>
             <div>
               <p className="font-semibold">Contact</p>

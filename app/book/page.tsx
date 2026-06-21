@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import { ButtonLink, PageHeader, Section } from "../components";
 import { lessonOptions, serviceAreas } from "../data";
 import { CalEmbed } from "./cal-embed";
+
+export const metadata: Metadata = {
+  title: "Book Private Swim Lessons",
+  description:
+    "Book private mobile swim lessons with Little Swimmers Academy for children ages 2-16 across Los Gatos, Saratoga, Campbell, Cupertino, and nearby South Bay communities.",
+  alternates: {
+    canonical: "/book",
+  },
+};
 
 export default function BookPage() {
   return (

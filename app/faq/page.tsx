@@ -1,9 +1,40 @@
+import type { Metadata } from "next";
 import { PageHeader, Section } from "../components";
 import { faqs } from "../data";
+import { siteUrl } from "../seo";
+
+export const metadata: Metadata = {
+  title: "FAQ",
+  description:
+    "Answers about private swim lesson ages, preparation, travel, weather, booking, and service-area-only instruction.",
+  alternates: {
+    canonical: "/faq",
+  },
+};
 
 export default function FaqPage() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${siteUrl}/faq#faq`,
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd),
+        }}
+      />
       <PageHeader
         eyebrow="FAQ"
         title="Helpful answers before your first lesson."

@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { ButtonLink, PageHeader, Section } from "../components";
 import { lessonOptions } from "../data";
+
+export const metadata: Metadata = {
+  title: "Pricing",
+  description:
+    "Private swim lesson pricing for 30, 45, and 60 minute sessions with Little Swimmers Academy.",
+  alternates: {
+    canonical: "/pricing",
+  },
+};
 
 export default function PricingPage() {
   return (

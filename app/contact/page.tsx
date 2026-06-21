@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { PageHeader, Section } from "../components";
 import { ContactForm } from "./form";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Contact Little Swimmers Academy about private mobile swim lesson availability, service areas, and lesson options for your child.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
 
 export default function ContactPage() {
   return (

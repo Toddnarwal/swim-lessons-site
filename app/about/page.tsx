@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import { PageHeader, Section } from "../components";
 import { certifications } from "../data";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Meet the private swim instructor behind Little Swimmers Academy, serving families with safety-first swim lessons across the South Bay.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 export default function AboutPage() {
   return (

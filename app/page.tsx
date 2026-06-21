@@ -70,7 +70,7 @@ export default function Home() {
               a travel fee confirmed before booking.
             </p>
             <div className="mt-7">
-              <ButtonLink href="/book">Check Availability</ButtonLink>
+              <ButtonLink href="/service-areas">View Service Areas</ButtonLink>
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
