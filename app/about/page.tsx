@@ -24,10 +24,13 @@ export default function AboutPage() {
           <div className="rounded-lg bg-white p-7 shadow-sm ring-1 ring-sky-100 lg:col-span-2">
             <h2 className="text-2xl font-bold">Instructor Biography</h2>
             <p className="mt-4 leading-8 text-slate-600">
-              Hello! I was a competitive swimmer for nine years and have been
-              teaching private and group swim lessons since October 2019. As a
-              former high school All-American swimmer, I bring strong technical
-              knowledge and an adaptive coaching style to every lesson.
+              Hi, I&apos;m Sierra! I recently graduated from UC Irvine and have a
+              passion for combining creativity and skill building to help each child
+              learn in the way that works best for them. I was a competitive
+              swimmer for nine years and have been teaching private and group
+              swim lessons since October 2019. As a former high school
+              All-American swimmer, I bring strong technical knowledge and an
+              adaptive coaching style to every lesson.
             </p>
             <p className="mt-4 leading-8 text-slate-600">
               I enjoy working with beginners and experienced swimmers alike,
